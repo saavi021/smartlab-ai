@@ -41,7 +41,7 @@ require("dotenv").config({
   async function startServer() {
     await connectDatabase();
   
-    app.listen(PORT, "127.0.0.1", () => {
+    app.listen(PORT, "0.0.0.0", () => {
       console.log(
         `Backend running on http://127.0.0.1:${PORT}`
       );
