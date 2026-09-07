@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1788717335680",
+    "name": "Test User",
+    "email": "newtest123@example.com",
+    "password": "$2b$10$R4Mqj97frjXof.pBZTkEDOlxRjXb1VubhTxhlr6CIfZ6Ela26dVaq"
+  },
+  {
+    "id": "1788717506872",
+    "name": "Saavi",
+    "email": "website-test@gmail.com",
+    "password": "$2b$10$Vc6StWc4aPjuzW3yj2hFveqNqR5BNcAGR2A723O30HHub5KDkQ8F6"
+  },
+  {
+    "id": "1788722470168",
+    "name": "Saavi Mongo Test",
+    "email": "saavi-mongo-test@example.com",
+    "password": "$2b$10$E7Kueg/4gYVvFCMeTnEoqOsDyvt059.7m8sCYCvxgNbDq5NLx1LRS"
+  }
+]
