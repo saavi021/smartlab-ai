@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 function UploadCard() {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -68,7 +69,7 @@ function UploadCard() {
       const formData = new FormData();
       formData.append("report", selectedFile);
 
-      const response = await fetch("/api/reports/upload", {
+      const response = await fetch(`${API_URL}/api/reports/upload", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

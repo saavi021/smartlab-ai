@@ -1,4 +1,5 @@
 import { useState } from "react";
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 function Signup({ onLogin, onSwitchToLogin }) {
   const [name, setName] = useState("");
@@ -31,7 +32,7 @@ function Signup({ onLogin, onSwitchToLogin }) {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/auth/signup", {
+      const response = await fetch(`${API_URL}/api/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

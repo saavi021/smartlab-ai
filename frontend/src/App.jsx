@@ -4,6 +4,7 @@ import UploadCard from "./components/UploadCard";
 import Login from "./components/login";
 import Signup from "./components/signup";
 import ReportHistory from "./components/ReportHistory";
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -23,7 +24,7 @@ function App() {
     }
 
     try {
-      const response = await fetch("/api/auth/me", {
+      const response = await fetch(`${API_URL}/api/auth/me`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

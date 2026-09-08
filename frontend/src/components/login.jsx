@@ -1,4 +1,5 @@
 import { useState } from "react";
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 function Login({ onLogin, onSwitchToSignup }) {
   const [email, setEmail] = useState("");
@@ -25,7 +26,7 @@ function Login({ onLogin, onSwitchToSignup }) {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/auth/login", {
+      const response = await fetch(`${API_URL}/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
