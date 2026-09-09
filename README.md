@@ -138,14 +138,9 @@ npm run dev
 
 ## 📸 Screenshots
 
-Coming soon...
+### Dashboard
 
-- Home Page
-- Login
-- Upload Report
-- Report Analysis
-- Report History
-
+![SmartLab AI Dashboard](screenshots/dashboard.png)
 ---
 
 ## 🔮 Future Improvements
