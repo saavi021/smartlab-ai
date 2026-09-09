@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 function ReportHistory() {
   const [reports, setReports] = useState([]);
@@ -23,7 +24,7 @@ function ReportHistory() {
         return;
       }
 
-      const response = await fetch("/api/reports", {
+      const response = await fetch(`${API_URL}/api/reports`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -59,7 +60,7 @@ function ReportHistory() {
         return;
       }
 
-      const response = await fetch(`/api/reports/${reportId}`, {
+      const response = await fetch(`${API_URL}/api/reports/${reportId}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,

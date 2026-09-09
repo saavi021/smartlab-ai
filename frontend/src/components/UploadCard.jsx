@@ -69,7 +69,7 @@ function UploadCard() {
       const formData = new FormData();
       formData.append("report", selectedFile);
 
-      const response = await fetch(`${API_URL}/api/reports/upload", {
+      const response = await fetch(`${API_URL}/api/reports/upload`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
