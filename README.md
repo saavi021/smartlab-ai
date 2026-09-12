@@ -140,7 +140,11 @@ npm run dev
 
 ### Dashboard
 
-![SmartLab AI Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png)
+
+### Blood Report Analysis
+
+![Report Analysis](screenshots/report-analysis.png)
 ---
 
 ## 🔮 Future Improvements
